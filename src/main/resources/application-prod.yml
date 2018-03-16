@@ -1,0 +1,5 @@
+profiles: prod
+server:
+  port: 8082
+logging:
+  path: /var/log/spring-boot-demo
