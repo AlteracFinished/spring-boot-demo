@@ -8,3 +8,5 @@ services:
 
   elk:
     image: sebp/elk:564
+    ports:
+      - 5601:5601
