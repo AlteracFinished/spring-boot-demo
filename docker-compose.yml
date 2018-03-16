@@ -2,11 +2,13 @@ version: '3'
 services:
   spring-boot-demo:
     build: .
+    image: spring-boot-demo
     restart: always
     ports:
       - 8082:8082
 
   elk:
-    image: sebp/elk:564
+    build: ./elk
+    image: spring-boot-demo-elk
     ports:
       - 5601:5601
