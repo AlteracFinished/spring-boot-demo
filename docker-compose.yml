@@ -6,9 +6,5 @@ services:
     restart: always
     ports:
       - 8082:8082
-
-  elk:
-    build: ./elk
-    image: spring-boot-demo-elk
-    ports:
-      - 5601:5601
+    networks:
+      - elk
