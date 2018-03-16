@@ -4,4 +4,4 @@ VOLUME /log/spring-boot-demo /log
 ADD ./target/spring-boot-demo.jar /app/
 CMD ["java", "-Xmx200m", "-jar", "/app/spring-boot-demo.jar"]
 
-EXPOSE 8081
+EXPOSE 8082
