@@ -2,4 +2,5 @@ profiles: prod
 server:
   port: 8082
 logging:
+  file: spring-boot-demo.log
   path: /log
