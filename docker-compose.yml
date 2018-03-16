@@ -1,0 +1,23 @@
+version: '1'
+services:
+  spring-boot-demo:
+    build: .
+    restart: always
+    expose:
+      - 8082:8082
+    networks:
+      - stand
+
+  elk:
+    image: sebp/elk:564
+    ports:
+      - 5000:5000
+      - 9200:9200
+      - 9300:9300
+    expose:
+      - 5601:5601
+    networks:
+      -stand
+
+networks:
+  stand:
